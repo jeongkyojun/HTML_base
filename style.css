@@ -2,18 +2,9 @@
     display: grid;
     grid-template-rows: 5;
     grid-template-columns: 5;
-    grid-template-areas: 
-    "heading"
-    "p_tag"
-    "br_tag block pre_tag"
-    "f g h i j"
-    "k l m n o"
-    "p q r s t"
-    "u v w x y";    
 }
 
 .main_body div{
-    border : 1px solid black;
 }
 
 .heading{
