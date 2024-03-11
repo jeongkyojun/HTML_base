@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS</title>
+
+    <style>
+      /* Class Selector */
+      .h1Class {
+        color: green;
+      }
+
+      /* ID Selector */
+      #welcome-title {
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur est
+      cumque eius quis! Neque facere modi, nulla repellendus laborum repellat
+      eveniet quae necessitatibus mollitia aut? Incidunt et quibusdam neque
+      nulla.
+    </p>
+
+    <ul style="color: red">
+      <li>빨간글씨</li>
+      <!-- 부모의 스타일을 상속받는다. -->
+      <li style="color: blue">파란글씨</li>
+      <!-- 부모의 스타일을 덮어쓴다. -->
+    </ul>
+
+    <h1 class="h1Class">클래스 선택자가 적용된 태그입니다.</h1>
+    <!-- color: green 이 적용 -->
+    <h1 id="welcome-title">아이디 선택자가 적용된 태그입니다.</h1>
+    <!-- ID Selector 인 color: blue 가 적용 -->
+    <h1>클래스 선택자가 적용되지 않은 태그입니다.</h1>
+
+    <div id="attr_selector">
+      <a href="http://www.naver.com" target="_self">attr </a>
+      <a href="http://www.naver.com" target="_blank">attr = value </a>
+      <a href="https://www.naver.com"> attr^=value </a>
+      <a href="http://www.naver.net"> attr$=value </a>
+      <a href="https://www.naver.net" target="_blank">
+        attr=value & attr^=value & attr$=value</a
+      >
+      <a href="http://www.daum.com"> attr*=value </a>
+      <a href="http://www.naver.com"> 일반 a 태그 </a>
+    </div>
+
+    <div id="PseudoClassSelector">
+      <h2>Movie List</h2>
+      <ul>
+        <li class="movie">ToyStory</li>
+        <li class="movie">Zootopia</li>
+        <li class="movie">Inside Out</li>
+        <li class="movie">Coco</li>
+        <li class="movie">Finding Nemo</li>
+      </ul>
+    </div>
+  </body>
+</html>

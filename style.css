@@ -10,3 +10,37 @@
 .heading{
     grid-area: "heading";
 }
+
+h1 {
+    color: red;
+}
+
+p {
+    color: green;
+}
+
+a{
+    display: block;
+}
+
+a[target]{
+    color: pink;
+}
+
+a[target="_blank"]{
+    color: red;
+}
+
+a[href^="https"]{
+	font-size: 30px;
+    margin-left: 30px;
+}
+
+a[href$=".net"]{
+	background-color: yellow;
+}
+
+a[href*="daum"]{
+    color: sienna;
+}
+
