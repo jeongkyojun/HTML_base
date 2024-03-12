@@ -1,0 +1,35 @@
+/*
+Selector Combinators
+
+*/
+
+ul li:last-of-type{
+    color: red;
+}
+
+
+code ~ p{
+    color:blue;
+}
+
+code + p{
+    background-color: red;
+}
+
+
+div{
+    border: 2px solid silver;
+    margin: 5px;
+}
+
+.child1{
+	color: red;
+}
+
+.parent1, .parent2{
+	color: blue;
+}
+
+.parent2 *{
+	color:inherit;
+}

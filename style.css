@@ -15,9 +15,6 @@ h1 {
     color: red;
 }
 
-p {
-    color: green;
-}
 
 a{
     display: block;
@@ -44,3 +41,52 @@ a[href*="daum"]{
     color: sienna;
 }
 
+
+
+/*
+Pseudo-Class Selector
+*/
+
+li{
+    color: green;
+}
+
+/*
+li:first-child{
+    color: red;
+}
+*/
+/*
+li:last-child{
+    color: red;
+}
+*/
+
+ul li:nth-child(even){
+    color: red;
+}
+
+ol li:nth-of-type(even){
+    color: blue;
+}
+/*
+ol li:nth-child(even){
+    color: blue;
+}
+*/
+
+
+/* :not() */
+input:not([placeholder]){
+    background-color: indianred;
+}
+
+.VES{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.VES .movie::before{
+    content: 'MOVIE';
+    color: indianred;
+}
