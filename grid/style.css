@@ -1,0 +1,69 @@
+/* 2행 3열 그리드 레이아웃 */
+.container{
+    display: grid;
+    border: 5px dashed orange;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 300px;
+    height: 200px;
+}
+
+.auto-container{
+    display: grid;
+    border: 5px dashed orange;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    width: 300px;
+    height: 200px;
+}
+
+.item{
+    background-color: paleturquoise;
+    border: 3px solid blue;
+    font-size: 30px;
+}
+
+/* 인라인 그리드 레이아웃*/
+.container-grid{
+	display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* grid-template-area로 세부 설정하기 */
+.container-grid-area{
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+    "area1 area3 area3"
+    "area1 area2 area2"
+    "area1 area2 area2";
+	width: 300px;
+    height: 300px;
+    border: 5px dashed teal;
+    background-color: aqua;
+}
+
+.area1{
+    grid-area: area1;
+    border: 2px solid orange;
+	background-color: red;
+    color: blue;
+    font-size: 30px;
+}
+.area2{
+    grid-area: area2;
+    border: 2px solid orange;
+	background-color: blue;
+    color: orange;
+    font-size: 30px;
+}
+.area3{
+    grid-area: area3;
+    border: 2px solid orange;
+	background-color: green;
+    color: white;
+    font-size: 30px;
+}
